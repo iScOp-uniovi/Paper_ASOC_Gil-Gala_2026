@@ -16,10 +16,10 @@ This folder contains the benchmark instances used in the experiments for the pap
 
 The datasets are used to train and test hyper-heuristic methods for evolving ensembles of routing policies for the **Electric Vehicle Routing Problem (EVRP)**.
 
-The instances are provided as two compressed files:
+This folder preserves both:
 
-- `SchneiderInstancesTraining.zip` → Training instances used during the learning/evolutionary phase.
-- `SchneiderInstancesTest.zip` → Test instances used for the final experimental evaluation.
+- the **original ZIP files** containing the Schneider-format EVRP instances;
+- the **FAIR-enhanced ZIP files**, which add open CSV formats, documentation and checksums.
 
 ---
 
@@ -29,46 +29,79 @@ The instances are provided as two compressed files:
 data/
 ├── README.md
 ├── SchneiderInstancesTraining.zip
-└── SchneiderInstancesTest.zip
+├── SchneiderInstancesTest.zip
+├── SchneiderInstancesTraining_FAIR.zip
+└── SchneiderInstancesTest_FAIR.zip
 ```
-
-Each ZIP file contains plain-text EVRP instances in Schneider format.
 
 ---
 
 ## 📦 Dataset Files
 
-### `SchneiderInstancesTraining.zip`
+### Original instance archives
 
-This archive contains the training set used to evolve and tune the routing policies.
+#### `SchneiderInstancesTraining.zip`
+
+Original archive containing the training instances used during the learning/evolutionary phase.
 
 - Number of instance files: **47**
-- Instance families:
-  - `c*` → clustered customer distribution
-  - `r*` → random customer distribution
-  - `rc*` → mixed random-clustered customer distribution
-- Instance types:
-  - `*_21.txt` → full-size Schneider EVRP instances
-  - `*C5.txt`, `*C10.txt`, `*C15.txt` → reduced-size instances with 5, 10 or 15 customers
+- Format: Schneider EVRP plain-text instance files (`*.txt`)
 
-### `SchneiderInstancesTest.zip`
+#### `SchneiderInstancesTest.zip`
 
-This archive contains the independent test set used to assess the final performance of the evolved routing policies.
+Original archive containing the independent test instances used for the final experimental evaluation.
 
 - Number of instance files: **45**
-- Instance families:
-  - `c*` → clustered customer distribution
-  - `r*` → random customer distribution
-  - `rc*` → mixed random-clustered customer distribution
-- Instance types:
-  - `*_21.txt` → full-size Schneider EVRP instances
-  - `*C5.txt`, `*C10.txt`, `*C15.txt` → reduced-size instances with 5, 10 or 15 customers
+- Format: Schneider EVRP plain-text instance files (`*.txt`)
+
+These original archives are preserved unchanged as the source instance files.
+
+---
+
+### FAIR-enhanced instance archives
+
+#### `SchneiderInstancesTraining_FAIR.zip`
+
+FAIR-enhanced version of `SchneiderInstancesTraining.zip`.
+
+It contains:
+- the original Schneider-format `.txt` instance files;
+- open-format CSV versions of the node tables and parameter tables;
+- a `ReadMe_*_data_structure.txt` file describing the structure of the data;
+- a `CHECKSUMS.txt` file with SHA-256 checksums;
+- an internal `README.md`.
+
+#### `SchneiderInstancesTest_FAIR.zip`
+
+FAIR-enhanced version of `SchneiderInstancesTest.zip`.
+
+It contains:
+- the original Schneider-format `.txt` instance files;
+- open-format CSV versions of the node tables and parameter tables;
+- a `ReadMe_*_data_structure.txt` file describing the structure of the data;
+- a `CHECKSUMS.txt` file with SHA-256 checksums;
+- an internal `README.md`.
+
+---
+
+## 🧬 Instance Families
+
+Both training and test archives include Schneider EVRP instances from the following families:
+
+- `c*` → clustered customer distribution
+- `r*` → random customer distribution
+- `rc*` → mixed random-clustered customer distribution
+
+Instance types include:
+
+- `*_21.txt` → full-size Schneider EVRP instances
+- `*C5.txt`, `*C10.txt`, `*C15.txt` → reduced-size instances with 5, 10 or 15 customers
 
 ---
 
 ## 🔍 Instance Format
 
-Each instance file is a plain-text file describing an EVRP instance. The first part of the file contains the list of depots, charging stations and customers.
+Each original instance file is a plain-text file describing an EVRP instance. The first part of the file contains the list of depots, charging stations and customers.
 
 The columns are:
 
@@ -110,16 +143,25 @@ This separation is intended to avoid information leakage between the learning ph
 
 To reproduce the experimental setup:
 
-1. Use the instances in `SchneiderInstancesTraining.zip` during the training or policy-evolution phase.
-2. Use the instances in `SchneiderInstancesTest.zip` for the final test evaluation.
-3. Preserve the original filenames, since they encode the instance family and size.
-4. Report results separately for training and test sets.
+1. Use `SchneiderInstancesTraining.zip` as the original source for the training instances.
+2. Use `SchneiderInstancesTest.zip` as the original source for the test instances.
+3. Use `SchneiderInstancesTraining_FAIR.zip` and `SchneiderInstancesTest_FAIR.zip` when open-format CSV versions, checksums or data-structure documentation are required.
+4. Preserve the original filenames, since they encode the instance family and size.
+5. Report results separately for training and test sets.
+
+---
+
+## 🔐 Integrity Verification
+
+Each FAIR-enhanced archive includes a `CHECKSUMS.txt` file with SHA-256 checksums for all files contained in the archive.
+
+This allows users to verify file integrity and detect accidental modifications or corruption.
 
 ---
 
 ## 📜 License
 
-Unless stated otherwise in the repository, the data and documentation in this folder are distributed under the **Creative Commons Attribution 4.0 International License (CC BY 4.0)**.
+Unless stated otherwise in the repository, the data, CSV exports and documentation in this folder are distributed under the **Creative Commons Attribution 4.0 International License (CC BY 4.0)**.
 
 If these datasets are reused, please cite the associated manuscript once the final bibliographic information is available.
 
