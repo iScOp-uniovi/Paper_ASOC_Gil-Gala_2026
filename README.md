@@ -44,7 +44,7 @@ To access the supplementary material, clone this repository:
 ```bash
 git clone https://github.com/iScOp-uniovi/Paper_ASOC_Gil-Gala_2026
 cd Paper_ASOC_Gil-Gala_2026
-
+```
 ---
 
 ## 📧 Contact
