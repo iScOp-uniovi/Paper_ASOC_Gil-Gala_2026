@@ -1,0 +1,164 @@
+Ablation study,Column_2,Column_3,Column_4,Column_5,Column_6,Column_7,Column_8,Column_9,Column_10,Column_11,Column_12,Column_13,Column_14,Column_15,Column_16,Column_17,Column_18,Column_19,Column_20,Column_21,Column_22,Column_23,Column_24
+Number of Vehicles,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,
+Test,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,
+A Shapiro test is performed to check whether the samples follow a normal distribution.,,,,,,,,,,,,,,,,,,,,,,,
+,Method,Shapiro p-value,,,,,,,,,,,,,,,,,,,,,
+1,3 5 5 V,0.551618035529723,,,,,,,,,,,,,,,,,,,,,
+2,3 20 5 V,0.230611000332255,,,,,,,,,,,,,,,,,,,,,
+3,3 5 20 V,0.173469100256515,,,,,,,,,,,,,,,,,,,,,
+4,3 20 20 V,0.430076581895526,,,,,,,,,,,,,,,,,,,,,
+5,5 5 5 V,0.446507810682933,,,,,,,,,,,,,,,,,,,,,
+6,5 20 5 V,0.169775161383088,,,,,,,,,,,,,,,,,,,,,
+7,5 5 20 V,0.469246294956975,,,,,,,,,,,,,,,,,,,,,
+8,5 20 20 V,0.308821201655683,,,,,,,,,,,,,,,,,,,,,
+9,7 5 5 V,0.115715167981253,,,,,,,,,,,,,,,,,,,,,
+10,7 20 5 V,0.444892930453693,,,,,,,,,,,,,,,,,,,,,
+11,7 5 20 V,0.0200953402815471,,,,,,,,,,,,,,,,,,,,,
+12,7 20 20 V,0.730689643508709,,,,,,,,,,,,,,,,,,,,,
+13,3 5 5 S,0.464231554866103,,,,,,,,,,,,,,,,,,,,,
+14,3 20 5 S,0.472820830860875,,,,,,,,,,,,,,,,,,,,,
+15,3 5 20 S,0.101561405298281,,,,,,,,,,,,,,,,,,,,,
+16,3 20 20 S,0.275866620723962,,,,,,,,,,,,,,,,,,,,,
+17,5 5 5 S,0.0487863420358511,,,,,,,,,,,,,,,,,,,,,
+18,5 20 5 S,0.0560516736056154,,,,,,,,,,,,,,,,,,,,,
+19,5 5 20 S,0.14268195282653,,,,,,,,,,,,,,,,,,,,,
+20,5 20 20 S,0.664944151584272,,,,,,,,,,,,,,,,,,,,,
+21,7 5 5 S,0.174533673982741,,,,,,,,,,,,,,,,,,,,,
+22,7 20 5 S,0.222205982621362,,,,,,,,,,,,,,,,,,,,,
+23,7 5 20 S,0.0491489145568968,,,,,,,,,,,,,,,,,,,,,
+24,7 20 20 S,0.0476171512984141,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,
+"The Shapiro–Wilk test was applied to each method. Samples with constant values were excluded, as the test is not defined for distributions with zero variance.",,,,,,,,,,,,,,,,,,,,,,,
+"Shapiro–Wilk tests revealed that several methods significantly deviated from normality (p ≤ 0.05), indicating that the normality assumption was not met for all samples.",,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,
+Homogeneity_of_Variance among the groups.,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,
+Method,Statistic,Df,p.value,,,,,,,,,,,,,,,,,,,,
+Levene,4.056888383262236,23,1.1013125012805018e-9,,,,,,,,,,,,,,,,,,,,
+Fligner-Killeen,85.09216780949095,23,4.666135997114252e-9,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,
+The homoscedasticity assumption was strongly rejected,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,
+"Due to violations of normality and homoscedasticity, a Kruskal–Wallis test was applied to independent samples.",,,,,,,,,,,,,,,,,,,,,,,
+ Kruskal-Wallis test,,,χ²,df,p-value,ε²,,,,,,,,,,,,,,,,,
+,,,59.853454518317626,23,0.00004011426271886068,0.05295036568723797,,"The magnitude of ε² was interpreted according to commonly used thresholds: small (0.01 ≤ ε² < 0.08), medium (0.08 ≤ ε² < 0.26), and large (ε² ≥ 0.26).",,,,,,,,,,,,,,,
+The Kruskal–Wallis test revealed statistically significant differences among the groups.,,,,,,,,,,,,,,,,,,,,,,,
+"The effect size (ε²) wass mall, indicating that the observed differences among groups were limited in magnitude and had relatively low practical significance.",,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,
+Kruskal post-hoc,,,,,,,,,,,,,,,,,,,,,,,
+ Post-hoc pairwise comparisons were performed using Dunn's test with a Bonferroni correction to identify which specific groups showed differences.,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,
+,3 5 5 V,3 20 5 V,3 5 20 V,3 20 20 V,5 5 5 V,5 20 5 V,5 5 20 V,5 20 20 V,7 5 5 V,7 20 5 V,7 5 20 V,7 20 20 V,3 5 5 S,3 20 5 S,3 5 20 S,3 20 20 S,5 5 5 S,5 20 5 S,5 5 20 S,5 20 20 S,7 5 5 S,7 20 5 S,7 5 20 S
+3 20 5 V,1,,,,,,,,,,,,,,,,,,,,,,
+3 5 20 V,1,1,,,,,,,,,,,,,,,,,,,,,
+3 20 20 V,1,1,1,,,,,,,,,,,,,,,,,,,,
+5 5 5 V,1,1,1,1,,,,,,,,,,,,,,,,,,,
+5 20 5 V,1,1,1,1,1,,,,,,,,,,,,,,,,,,
+5 5 20 V,1,1,1,1,1,1,,,,,,,,,,,,,,,,,
+5 20 20 V,0.07792797405006452,0.03230015063952477,0.002951050400817086,1,0.7909897283108726,1,1,,,,,,,,,,,,,,,,
+7 5 5 V,1,1,1,1,1,1,1,0.14898705836585127,,,,,,,,,,,,,,,
+7 20 5 V,1,1,1,1,1,1,1,1,1,,,,,,,,,,,,,,
+7 5 20 V,1,1,1,1,1,1,1,0.7432414170429797,1,1,,,,,,,,,,,,,
+7 20 20 V,0.12837410143406325,0.054689220224623546,0.005352228946325303,1,1,1,1,1,0.24031473790346913,1,1,,,,,,,,,,,,
+3 5 5 S,1,1,1,1,1,1,1,1,1,1,1,1,,,,,,,,,,,
+3 20 5 S,1,1,1,1,1,1,0.7926016331079924,0.000663131111471468,1,0.8347319707201722,1,0.0012510896687578227,1,,,,,,,,,,
+3 5 20 S,1,1,1,1,1,1,1,0.03279720483943834,1,1,1,0.055505009765896014,1,1,,,,,,,,,
+3 20 20 S,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,,,,,,,,
+5 5 5 S,1,1,1,1,1,1,1,0.6153628470868514,1,1,1,0.9448735261763587,1,1,1,1,,,,,,,
+5 20 5 S,1,1,1,1,1,1,1,0.23472803029804037,1,1,1,0.37287127801497727,1,1,1,1,1,,,,,,
+5 5 20 S,1,1,1,1,1,1,1,0.03342866768201542,1,1,1,0.05654082631166541,1,1,1,1,1,1,,,,,
+5 20 20 S,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,,,,
+7 5 5 S,1,1,1,1,1,1,1,1,1,1,1,1,1,0.835578102920808,1,1,1,1,1,1,,,
+7 20 5 S,1,1,1,1,1,1,1,0.6685584464049423,1,1,1,1,1,1,1,1,1,1,1,1,1,,
+7 5 20 S,1,1,1,1,1,1,1,0.38558309448783384,1,1,1,0.6020568322788823,1,1,1,1,1,1,1,1,1,1,
+7 20 20 S,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1
+,,,,,,,,,,,,,,,,,,,,,,,
+Cliff's Delta: Pairwise effect sizes quantifying the magnitude of significant differences.,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,
+,3 5 5 V,3 20 5 V,3 5 20 V,3 20 20 V,5 5 5 V,5 20 5 V,5 5 20 V,5 20 20 V,7 5 5 V,7 20 5 V,7 5 20 V,7 20 20 V,3 5 5 S,3 20 5 S,3 5 20 S,3 20 20 S,5 5 5 S,5 20 5 S,5 5 20 S,5 20 20 S,7 5 5 S,7 20 5 S,7 5 20 S
+3 20 5 V,0.072,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+3 5 20 V,0.128,0.051,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+3 20 20 V,-0.108,-0.148,-0.221,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+5 5 5 V,-0.102,-0.15,-0.224,0.036,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+5 20 5 V,-0.159,-0.201,-0.293,-0.083,-0.097,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+5 5 20 V,-0.252,-0.27,-0.381,-0.12,-0.15,-0.076,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+5 20 20 V,-0.481,-0.454,-0.589,-0.333,-0.393,-0.326,-0.246,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+7 5 5 V,-0.033,-0.089,-0.178,0.118,0.061,0.194,0.26,0.513,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+7 20 5 V,-0.267,-0.283,-0.378,-0.131,-0.152,-0.098,-0.006,0.25,-0.23,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+7 5 20 V,-0.097,-0.139,-0.221,0.051,0.001,0.131,0.199,0.458,-0.076,0.189,0,0,0,0,0,0,0,0,0,0,0,0,0
+7 20 20 V,-0.49,-0.474,-0.571,-0.334,-0.403,-0.343,-0.287,-0.042,-0.476,-0.278,-0.422,0,0,0,0,0,0,0,0,0,0,0,0
+3 5 5 S,-0.151,-0.157,-0.251,0.04,-0.058,0.099,0.184,0.479,-0.137,0.179,-0.047,0.421,0,0,0,0,0,0,0,0,0,0,0
+3 20 5 S,0.146,0.043,0.007,0.233,0.232,0.352,0.408,0.647,0.202,0.418,0.264,0.611,0.342,0,0,0,0,0,0,0,0,0,0
+3 5 20 S,-0.018,-0.054,-0.109,0.169,0.096,0.221,0.306,0.594,0.058,0.294,0.133,0.521,0.213,-0.182,0,0,0,0,0,0,0,0,0
+3 20 20 S,-0.118,-0.156,-0.243,0.008,-0.016,0.078,0.161,0.412,-0.113,0.173,-0.048,0.418,-0.017,-0.284,-0.163,0,0,0,0,0,0,0,0
+5 5 5 S,-0.111,-0.126,-0.233,0.102,-0.011,0.148,0.239,0.529,-0.063,0.189,0.019,0.446,0.068,-0.308,-0.177,0.069,0,0,0,0,0,0,0
+5 20 5 S,-0.088,-0.1,-0.171,0.122,0.014,0.191,0.262,0.566,-0.042,0.264,0.051,0.487,0.109,-0.258,-0.12,0.107,0.049,0,0,0,0,0,0
+5 5 20 S,-0.017,-0.052,-0.108,0.173,0.09,0.238,0.317,0.614,0.044,0.313,0.128,0.538,0.207,-0.189,-0.017,0.172,0.158,0.108,0,0,0,0,0
+5 20 20 S,-0.117,-0.143,-0.238,0.037,-0.032,0.119,0.191,0.458,-0.111,0.184,-0.027,0.419,0.008,-0.292,-0.173,0.029,-0.06,-0.093,-0.169,0,0,0,0
+7 5 5 S,-0.283,-0.261,-0.377,-0.079,-0.184,-0.041,0.048,0.348,-0.296,0.049,-0.203,0.32,-0.172,-0.478,-0.37,-0.131,-0.25,-0.277,-0.369,-0.17,0,0,0
+7 20 5 S,-0.1,-0.136,-0.227,0.064,0.009,0.126,0.218,0.491,-0.06,0.193,0.007,0.446,0.052,-0.289,-0.143,0.05,0.001,-0.058,-0.141,0.036,0.22,0,0
+7 5 20 S,-0.103,-0.136,-0.21,0.08,0.012,0.127,0.214,0.506,-0.02,0.19,0.037,0.45,0.103,-0.278,-0.103,0.057,0.081,-0.003,-0.099,0.074,0.259,0.042,0
+7 20 20 S,-0.136,-0.167,-0.24,0.023,-0.03,0.071,0.157,0.416,-0.11,0.164,-0.033,0.397,0.013,-0.29,-0.151,0.008,-0.041,-0.066,-0.148,-0.008,0.161,-0.036,-0.051
+,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,
+"This measure quantifies the magnitude of the differences between pairs of groups, independently of statistical significance. Effect sizes were interpreted according to the categories presented in",,,,,,,,,,,,,,,,,,,,,,,
+Effect Size Magnitude,Negligible,Small,Medium,Large,,,,,,,,,,,,,,,,,,,
+Absolute Cliff's Delta (|δ|),< 0.147,0.147-0.330,0.330-0.474,≥ 0.474,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,
+Cliff's Delta Magnitude,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,
+,3 5 5 V,3 20 5 V,3 5 20 V,3 20 20 V,5 5 5 V,5 20 5 V,5 5 20 V,5 20 20 V,7 5 5 V,7 20 5 V,7 5 20 V,7 20 20 V,3 5 5 S,3 20 5 S,3 5 20 S,3 20 20 S,5 5 5 S,5 20 5 S,5 5 20 S,5 20 20 S,7 5 5 S,7 20 5 S,7 5 20 S
+3 20 5 V,negligible,84,84,84,84,84,84,84,84,84,84,84,84,84,84,84,84,84,84,84,84,84,84
+3 5 20 V,negligible,negligible,84,84,84,84,84,84,84,84,84,84,84,84,84,84,84,84,84,84,84,84,84
+3 20 20 V,negligible,small,small,84,84,84,84,84,84,84,84,84,84,84,84,84,84,84,84,84,84,84,84
+5 5 5 V,negligible,small,small,negligible,84,84,84,84,84,84,84,84,84,84,84,84,84,84,84,84,84,84,84
+5 20 5 V,small,small,small,negligible,negligible,84,84,84,84,84,84,84,84,84,84,84,84,84,84,84,84,84,84
+5 5 20 V,small,small,medium,negligible,small,negligible,84,84,84,84,84,84,84,84,84,84,84,84,84,84,84,84,84
+5 20 20 V,large,medium,large,medium,medium,small,small,84,84,84,84,84,84,84,84,84,84,84,84,84,84,84,84
+7 5 5 V,negligible,negligible,small,negligible,negligible,small,small,large,84,84,84,84,84,84,84,84,84,84,84,84,84,84,84
+7 20 5 V,small,small,medium,negligible,small,negligible,negligible,small,small,84,84,84,84,84,84,84,84,84,84,84,84,84,84
+7 5 20 V,negligible,negligible,small,negligible,negligible,negligible,small,medium,negligible,small,84,84,84,84,84,84,84,84,84,84,84,84,84
+7 20 20 V,large,large,large,medium,medium,medium,small,negligible,large,small,medium,84,84,84,84,84,84,84,84,84,84,84,84
+3 5 5 S,small,small,small,negligible,negligible,negligible,small,large,negligible,small,negligible,medium,84,84,84,84,84,84,84,84,84,84,84
+3 20 5 S,negligible,negligible,negligible,small,small,medium,medium,large,small,medium,small,large,medium,84,84,84,84,84,84,84,84,84,84
+3 5 20 S,negligible,negligible,negligible,small,negligible,small,small,large,negligible,small,negligible,large,small,small,84,84,84,84,84,84,84,84,84
+3 20 20 S,negligible,small,small,negligible,negligible,negligible,small,medium,negligible,small,negligible,medium,negligible,small,small,84,84,84,84,84,84,84,84
+5 5 5 S,negligible,negligible,small,negligible,negligible,small,small,large,negligible,small,negligible,medium,negligible,small,small,negligible,84,84,84,84,84,84,84
+5 20 5 S,negligible,negligible,small,negligible,negligible,small,small,large,negligible,small,negligible,large,negligible,small,negligible,negligible,negligible,84,84,84,84,84,84
+5 5 20 S,negligible,negligible,negligible,small,negligible,small,small,large,negligible,small,negligible,large,small,small,negligible,small,small,negligible,84,84,84,84,84
+5 20 20 S,negligible,negligible,small,negligible,negligible,negligible,small,medium,negligible,small,negligible,medium,negligible,small,small,negligible,negligible,negligible,small,84,84,84,84
+7 5 5 S,small,small,medium,negligible,small,negligible,negligible,medium,small,negligible,small,small,small,large,medium,negligible,small,small,medium,small,84,84,84
+7 20 5 S,negligible,negligible,small,negligible,negligible,negligible,small,large,negligible,small,negligible,medium,negligible,small,negligible,negligible,negligible,negligible,negligible,negligible,small,84,84
+7 5 20 S,negligible,negligible,small,negligible,negligible,negligible,small,large,negligible,small,negligible,medium,negligible,small,negligible,negligible,negligible,negligible,negligible,negligible,small,negligible,84
+7 20 20 S,negligible,small,small,negligible,negligible,negligible,small,medium,negligible,small,negligible,medium,negligible,small,small,negligible,negligible,negligible,small,negligible,small,negligible,negligible
+,,,,,,,,,,,,,,,,,,,,,,,
+Confidence Intervals for the median ,,,,,,,,,,,,,,,,,,,,,,,
+Confidence intervals for the median were computed to provide an estimate of the uncertainty associated with the central tendency of each group.,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,
+Method,Median,CI95_Lower,CI95_Upper,,,,,,,,,,,,,,,,,,,,
+3 5 5 V,350,348,351.5,,,,,,,,,,,,,,,,,,,,
+3 20 5 V,349,347,352,,,,,,,,,,,,,,,,,,,,
+3 5 20 V,349,347,351,,,,,,,,,,,,,,,,,,,,
+3 20 20 V,351.5,349.01254079707115,352.5,,,,,,,,,,,,,,,,,,,,
+5 5 5 V,350.5,349,351.5,,,,,,,,,,,,,,,,,,,,
+5 20 5 V,352,349,353,,,,,,,,,,,,,,,,,,,,
+5 5 20 V,352,350.5,354,,,,,,,,,,,,,,,,,,,,
+5 20 20 V,353,352,355,,,,,,,,,,,,,,,,,,,,
+7 5 5 V,350,349,351,,,,,,,,,,,,,,,,,,,,
+7 20 5 V,352.5,349.5,353.5,,,,,,,,,,,,,,,,,,,,
+7 5 20 V,350.5,349.5,352,,,,,,,,,,,,,,,,,,,,
+7 20 20 V,353.5,351.5,356,,,,,,,,,,,,,,,,,,,,
+3 5 5 S,351,350,352,,,,,,,,,,,,,,,,,,,,
+3 20 5 S,349,347,350.5,,,,,,,,,,,,,,,,,,,,
+3 5 20 S,350,349,351,,,,,,,,,,,,,,,,,,,,
+3 20 20 S,351,349,352.5,,,,,,,,,,,,,,,,,,,,
+5 5 5 S,350,350,351,,,,,,,,,,,,,,,,,,,,
+5 20 5 S,350,349,352,,,,,,,,,,,,,,,,,,,,
+5 5 20 S,350,349,351,,,,,,,,,,,,,,,,,,,,
+5 20 20 S,351,349.5,352,,,,,,,,,,,,,,,,,,,,
+7 5 5 S,351,350.5,352.5,,,,,,,,,,,,,,,,,,,,
+7 20 5 S,350,350,351.5,,,,,,,,,,,,,,,,,,,,
+7 5 20 S,350,349,350.5,,,,,,,,,,,,,,,,,,,,
+7 20 20 S,351,349,352,,,,,,,,,,,,,,,,,,,,

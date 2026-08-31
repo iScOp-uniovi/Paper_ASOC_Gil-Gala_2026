@@ -24,12 +24,16 @@ The purpose of this folder is to improve compliance with **FAIR principles** by 
 open_formats/
 └── csv/
     ├── StatisticalAnalysis_19_05_2026/
-    └── SupplementaryMaterial_19_05_2026/
+    ├── SupplementaryMaterial_19_05_2026/
+    ├── StatisticalAnalysis_24_08_2026/
+    └── SupplementaryMaterial_24_08_2026/
 ```
 
 - `csv/` → Contains CSV exports generated from the Excel workbooks stored in the parent `results/` folder.
 - `csv/StatisticalAnalysis_19_05_2026/` → CSV versions of the sheets contained in `StatisticalAnalysis_19_05_2026.xlsx`.
 - `csv/SupplementaryMaterial_19_05_2026/` → CSV versions of the sheets contained in `SupplementaryMaterial_19_05_2026.xlsx`.
+- `csv/StatisticalAnalysis_24_08_2026/` → CSV versions of the sheets contained in `StatisticalAnalysis_24_08_2026.xlsx`.
+- `csv/SupplementaryMaterial_24_08_2026/` → CSV versions of the sheets contained in `SupplementaryMaterial_24_08_2026.xlsx`.
 
 ---
 
@@ -39,6 +43,8 @@ The original result files are provided in Excel format:
 
 - `StatisticalAnalysis_19_05_2026.xlsx`
 - `SupplementaryMaterial_19_05_2026.xlsx`
+- `StatisticalAnalysis_24_08_2026.xlsx`
+- `SupplementaryMaterial_24_08_2026.xlsx`
 
 For interoperability and reuse, each readable worksheet has been exported to a separate CSV file.
 
@@ -76,6 +82,22 @@ The corresponding CSV files are located in:
 
 ```text
 open_formats/csv/SupplementaryMaterial_19_05_2026/
+```
+
+### `StatisticalAnalysis_24_08_2026.xlsx`
+
+This workbook contains the updated statistical analyses for Table 4 and Figure 12. Its 8 worksheet-level CSV derivatives are located in:
+
+```text
+open_formats/csv/StatisticalAnalysis_24_08_2026/
+```
+
+### `SupplementaryMaterial_24_08_2026.xlsx`
+
+This workbook contains updated and extended data underlying Tables 4–5 and Figures 6–18. Its 31 worksheet-level CSV derivatives are located in:
+
+```text
+open_formats/csv/SupplementaryMaterial_24_08_2026/
 ```
 
 ---

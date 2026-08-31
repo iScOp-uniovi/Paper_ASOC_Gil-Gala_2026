@@ -1,0 +1,173 @@
+"Figure 11. Relative frequency of all symbols used by the RPs evolved by GP and MGA, including functions, variables, and numeric constants.",Column_2,Column_3,Column_4,Column_5,Column_6,Column_7,Column_8
+,,,,,,,
+Configuration,Internal_symbol,Manuscript_symbol,Type,Family,Count,Relative_frequency_all_nodes_pct,Relative_frequency_within_type_pct
+GP,*,$\times$,Function,Arithmetic,96,4.584527221,9.031044214
+GP,+,$+$,Function,Arithmetic,259,12.3686724,24.3650047
+GP,-,$-$,Function,Arithmetic,327,15.61604585,30.76199436
+GP,/,$/$,Function,Arithmetic,136,6.494746896,12.7939793
+GP,0.0,0.0,Constant,Constant,0,0,0
+GP,0.1,0.1,Constant,Constant,0,0,0
+GP,0.2,0.2,Constant,Constant,0,0,0
+GP,0.3,0.3,Constant,Constant,6,0.286532951,14.63414634
+GP,0.4,0.4,Constant,Constant,5,0.238777459,12.19512195
+GP,0.5,0.5,Constant,Constant,2,0.095510984,4.87804878
+GP,0.6,0.6,Constant,Constant,4,0.191021968,9.756097561
+GP,0.7,0.7,Constant,Constant,7,0.334288443,17.07317073
+GP,0.8,0.8,Constant,Constant,0,0,0
+GP,0.9,0.9,Constant,Constant,12,0.573065903,29.26829268
+GP,1.0,1.0,Constant,Constant,5,0.238777459,12.19512195
+GP,D,$D_{ni}$,Variable,Variable,0,0,0
+GP,DD,$DD_{ni}$,Variable,Variable,172,8.213944604,17.37373737
+GP,E,$E_{ni}$,Variable,Variable,282,13.46704871,28.48484848
+GP,EDep,$EDep_{ni}$,Variable,Variable,15,0.716332378,1.515151515
+GP,EDep_a,$EDep_{pvk}$,Variable,Variable,26,1.241642789,2.626262626
+GP,ERP,$ERP_{ni}$,Variable,Variable,0,0,0
+GP,ERP_a,$ERP_{pvk}$,Variable,Variable,35,1.671442216,3.535353535
+GP,Ec,$EC_{ni}$,Variable,Variable,25,1.193887297,2.525252525
+GP,Math.exp,$\exp$,Function,Nonlinear,0,0,0
+GP,Math.log,$\log$,Function,Nonlinear,12,0.573065903,1.128880527
+GP,Math.max,$\max$,Function,Min/max,82,3.915950334,7.714016933
+GP,Math.min,$\min$,Function,Min/max,122,5.82617001,11.47695202
+GP,Math.pow,$\mathrm{pow}$,Function,Nonlinear,12,0.573065903,1.128880527
+GP,Math.sqrt,$\sqrt{\cdot}$,Function,Nonlinear,17,0.811843362,1.599247413
+GP,RT,$RT_{ni}$,Variable,Variable,90,4.297994269,9.090909091
+GP,ST,$ST_{ni}$,Variable,Variable,43,2.053486151,4.343434343
+GP,VC,$C_{vk}$,Variable,Variable,28,1.337153773,2.828282828
+GP,VE,$E_{vk}$,Variable,Variable,27,1.289398281,2.727272727
+GP,VT,$T_{vk}$,Variable,Variable,247,11.79560649,24.94949495
+S 5 5,*,$\times$,Function,Arithmetic,170,5.760759065,10.91843288
+S 5 5,+,$+$,Function,Arithmetic,235,7.963402237,15.09312781
+S 5 5,-,$-$,Function,Arithmetic,279,9.45442223,17.91907514
+S 5 5,/,$/$,Function,Arithmetic,212,7.184005422,13.61592807
+S 5 5,0.0,0.0,Constant,Constant,2,0.067773636,2.564102564
+S 5 5,0.1,0.1,Constant,Constant,1,0.033886818,1.282051282
+S 5 5,0.2,0.2,Constant,Constant,7,0.237207726,8.974358974
+S 5 5,0.3,0.3,Constant,Constant,6,0.203320908,7.692307692
+S 5 5,0.4,0.4,Constant,Constant,8,0.271094544,10.25641026
+S 5 5,0.5,0.5,Constant,Constant,6,0.203320908,7.692307692
+S 5 5,0.6,0.6,Constant,Constant,14,0.474415452,17.94871795
+S 5 5,0.7,0.7,Constant,Constant,12,0.406641816,15.38461538
+S 5 5,0.8,0.8,Constant,Constant,5,0.16943409,6.41025641
+S 5 5,0.9,0.9,Constant,Constant,13,0.440528634,16.66666667
+S 5 5,1.0,1.0,Constant,Constant,4,0.135547272,5.128205128
+S 5 5,D,$D_{ni}$,Variable,Variable,80,2.710945442,6.079027356
+S 5 5,DD,$DD_{ni}$,Variable,Variable,117,3.964757709,8.890577508
+S 5 5,E,$E_{ni}$,Variable,Variable,127,4.30362589,9.650455927
+S 5 5,EDep,$EDep_{ni}$,Variable,Variable,98,3.320908167,7.446808511
+S 5 5,EDep_a,$EDep_{pvk}$,Variable,Variable,91,3.083700441,6.914893617
+S 5 5,ERP,$ERP_{ni}$,Variable,Variable,80,2.710945442,6.079027356
+S 5 5,ERP_a,$ERP_{pvk}$,Variable,Variable,96,3.253134531,7.294832827
+S 5 5,Ec,$EC_{ni}$,Variable,Variable,81,2.74483226,6.155015198
+S 5 5,Math.exp,$\exp$,Function,Nonlinear,24,0.813283633,1.541425819
+S 5 5,Math.log,$\log$,Function,Nonlinear,44,1.491019993,2.825947335
+S 5 5,Math.max,$\max$,Function,Min/max,261,8.844459505,16.76300578
+S 5 5,Math.min,$\min$,Function,Min/max,250,8.471704507,16.05651895
+S 5 5,Math.pow,$\mathrm{pow}$,Function,Nonlinear,41,1.389359539,2.633269107
+S 5 5,Math.sqrt,$\sqrt{\cdot}$,Function,Nonlinear,41,1.389359539,2.633269107
+S 5 5,RT,$RT_{ni}$,Variable,Variable,122,4.134191799,9.270516717
+S 5 5,ST,$ST_{ni}$,Variable,Variable,106,3.592002711,8.054711246
+S 5 5,VC,$C_{vk}$,Variable,Variable,70,2.372077262,5.319148936
+S 5 5,VE,$E_{vk}$,Variable,Variable,94,3.185360895,7.142857143
+S 5 5,VT,$T_{vk}$,Variable,Variable,154,5.218569976,11.70212766
+S 20 20,*,$\times$,Function,Arithmetic,132,4.901596732,9.328621908
+S 20 20,+,$+$,Function,Arithmetic,211,7.83512811,14.91166078
+S 20 20,-,$-$,Function,Arithmetic,302,11.21425919,21.34275618
+S 20 20,/,$/$,Function,Arithmetic,170,6.312662458,12.01413428
+S 20 20,0.0,0.0,Constant,Constant,0,0,0
+S 20 20,0.1,0.1,Constant,Constant,10,0.371333086,13.51351351
+S 20 20,0.2,0.2,Constant,Constant,11,0.408466394,14.86486486
+S 20 20,0.3,0.3,Constant,Constant,3,0.111399926,4.054054054
+S 20 20,0.4,0.4,Constant,Constant,7,0.25993316,9.459459459
+S 20 20,0.5,0.5,Constant,Constant,8,0.297066469,10.81081081
+S 20 20,0.6,0.6,Constant,Constant,5,0.185666543,6.756756757
+S 20 20,0.7,0.7,Constant,Constant,9,0.334199777,12.16216216
+S 20 20,0.8,0.8,Constant,Constant,9,0.334199777,12.16216216
+S 20 20,0.9,0.9,Constant,Constant,10,0.371333086,13.51351351
+S 20 20,1.0,1.0,Constant,Constant,2,0.074266617,2.702702703
+S 20 20,D,$D_{ni}$,Variable,Variable,67,2.487931675,5.564784053
+S 20 20,DD,$DD_{ni}$,Variable,Variable,103,3.824730784,8.554817276
+S 20 20,E,$E_{ni}$,Variable,Variable,135,5.012996658,11.21262458
+S 20 20,EDep,$EDep_{ni}$,Variable,Variable,88,3.267731155,7.3089701
+S 20 20,EDep_a,$EDep_{pvk}$,Variable,Variable,85,3.156331229,7.059800664
+S 20 20,ERP,$ERP_{ni}$,Variable,Variable,80,2.970664686,6.644518272
+S 20 20,ERP_a,$ERP_{pvk}$,Variable,Variable,85,3.156331229,7.059800664
+S 20 20,Ec,$EC_{ni}$,Variable,Variable,63,2.33939844,5.23255814
+S 20 20,Math.exp,$\exp$,Function,Nonlinear,18,0.668399554,1.272084806
+S 20 20,Math.log,$\log$,Function,Nonlinear,39,1.448199035,2.756183746
+S 20 20,Math.max,$\max$,Function,Min/max,231,8.577794281,16.32508834
+S 20 20,Math.min,$\min$,Function,Min/max,239,8.87486075,16.89045936
+S 20 20,Math.pow,$\mathrm{pow}$,Function,Nonlinear,40,1.485332343,2.826855124
+S 20 20,Math.sqrt,$\sqrt{\cdot}$,Function,Nonlinear,33,1.225399183,2.332155477
+S 20 20,RT,$RT_{ni}$,Variable,Variable,129,4.790196807,10.71428571
+S 20 20,ST,$ST_{ni}$,Variable,Variable,108,4.010397326,8.970099668
+S 20 20,VC,$C_{vk}$,Variable,Variable,58,2.153731898,4.817275748
+S 20 20,VE,$E_{vk}$,Variable,Variable,77,2.85926476,6.395348837
+S 20 20,VT,$T_{vk}$,Variable,Variable,126,4.678796881,10.46511628
+V 5 5,*,$\times$,Function,Arithmetic,142,5.012354395,9.726027397
+V 5 5,+,$+$,Function,Arithmetic,257,9.071655489,17.60273973
+V 5 5,-,$-$,Function,Arithmetic,251,8.859865867,17.19178082
+V 5 5,/,$/$,Function,Arithmetic,232,8.189198729,15.89041096
+V 5 5,0.0,0.0,Constant,Constant,1,0.03529827,1.351351351
+V 5 5,0.1,0.1,Constant,Constant,10,0.352982704,13.51351351
+V 5 5,0.2,0.2,Constant,Constant,13,0.458877515,17.56756757
+V 5 5,0.3,0.3,Constant,Constant,11,0.388280974,14.86486486
+V 5 5,0.4,0.4,Constant,Constant,4,0.141193082,5.405405405
+V 5 5,0.5,0.5,Constant,Constant,5,0.176491352,6.756756757
+V 5 5,0.6,0.6,Constant,Constant,4,0.141193082,5.405405405
+V 5 5,0.7,0.7,Constant,Constant,7,0.247087893,9.459459459
+V 5 5,0.8,0.8,Constant,Constant,6,0.211789622,8.108108108
+V 5 5,0.9,0.9,Constant,Constant,11,0.388280974,14.86486486
+V 5 5,1.0,1.0,Constant,Constant,2,0.070596541,2.702702703
+V 5 5,D,$D_{ni}$,Variable,Variable,70,2.470878927,5.388760585
+V 5 5,DD,$DD_{ni}$,Variable,Variable,161,5.683021532,12.39414935
+V 5 5,E,$E_{ni}$,Variable,Variable,169,5.965407695,13.0100077
+V 5 5,EDep,$EDep_{ni}$,Variable,Variable,76,2.682668549,5.850654349
+V 5 5,EDep_a,$EDep_{pvk}$,Variable,Variable,78,2.75326509,6.004618938
+V 5 5,ERP,$ERP_{ni}$,Variable,Variable,86,3.035651253,6.62047729
+V 5 5,ERP_a,$ERP_{pvk}$,Variable,Variable,69,2.435580657,5.311778291
+V 5 5,Ec,$EC_{ni}$,Variable,Variable,78,2.75326509,6.004618938
+V 5 5,Math.exp,$\exp$,Function,Nonlinear,28,0.988351571,1.917808219
+V 5 5,Math.log,$\log$,Function,Nonlinear,28,0.988351571,1.917808219
+V 5 5,Math.max,$\max$,Function,Min/max,247,8.718672785,16.91780822
+V 5 5,Math.min,$\min$,Function,Min/max,203,7.165548888,13.90410959
+V 5 5,Math.pow,$\mathrm{pow}$,Function,Nonlinear,29,1.023649841,1.98630137
+V 5 5,Math.sqrt,$\sqrt{\cdot}$,Function,Nonlinear,43,1.517825627,2.945205479
+V 5 5,RT,$RT_{ni}$,Variable,Variable,107,3.776914931,8.237105466
+V 5 5,ST,$ST_{ni}$,Variable,Variable,84,2.965054712,6.466512702
+V 5 5,VC,$C_{vk}$,Variable,Variable,63,2.223791034,4.849884527
+V 5 5,VE,$E_{vk}$,Variable,Variable,101,3.565125309,7.775211701
+V 5 5,VT,$T_{vk}$,Variable,Variable,157,5.54182845,12.08622017
+V 20 20,*,$\times$,Function,Arithmetic,173,5.223429952,10.00578369
+V 20 20,+,$+$,Function,Arithmetic,305,9.208937198,17.64025448
+V 20 20,-,$-$,Function,Arithmetic,333,10.05434783,19.25968768
+V 20 20,/,$/$,Function,Arithmetic,258,7.789855072,14.92192019
+V 20 20,0.0,0.0,Constant,Constant,4,0.120772947,4.255319149
+V 20 20,0.1,0.1,Constant,Constant,10,0.301932367,10.63829787
+V 20 20,0.2,0.2,Constant,Constant,7,0.211352657,7.446808511
+V 20 20,0.3,0.3,Constant,Constant,5,0.150966184,5.319148936
+V 20 20,0.4,0.4,Constant,Constant,6,0.18115942,6.382978723
+V 20 20,0.5,0.5,Constant,Constant,10,0.301932367,10.63829787
+V 20 20,0.6,0.6,Constant,Constant,13,0.392512077,13.82978723
+V 20 20,0.7,0.7,Constant,Constant,14,0.422705314,14.89361702
+V 20 20,0.8,0.8,Constant,Constant,7,0.211352657,7.446808511
+V 20 20,0.9,0.9,Constant,Constant,15,0.452898551,15.95744681
+V 20 20,1.0,1.0,Constant,Constant,3,0.09057971,3.191489362
+V 20 20,D,$D_{ni}$,Variable,Variable,72,2.173913043,4.83546004
+V 20 20,DD,$DD_{ni}$,Variable,Variable,187,5.646135266,12.55876427
+V 20 20,E,$E_{ni}$,Variable,Variable,204,6.15942029,13.70047011
+V 20 20,EDep,$EDep_{ni}$,Variable,Variable,81,2.445652174,5.439892545
+V 20 20,EDep_a,$EDep_{pvk}$,Variable,Variable,98,2.958937198,6.581598388
+V 20 20,ERP,$ERP_{ni}$,Variable,Variable,77,2.324879227,5.171255876
+V 20 20,ERP_a,$ERP_{pvk}$,Variable,Variable,78,2.355072464,5.238415044
+V 20 20,Ec,$EC_{ni}$,Variable,Variable,85,2.566425121,5.708529214
+V 20 20,Math.exp,$\exp$,Function,Nonlinear,23,0.694444444,1.330248699
+V 20 20,Math.log,$\log$,Function,Nonlinear,38,1.147342995,2.197802198
+V 20 20,Math.max,$\max$,Function,Min/max,281,8.484299517,16.25216888
+V 20 20,Math.min,$\min$,Function,Min/max,243,7.336956522,14.05436669
+V 20 20,Math.pow,$\mathrm{pow}$,Function,Nonlinear,29,0.875603865,1.677270098
+V 20 20,Math.sqrt,$\sqrt{\cdot}$,Function,Nonlinear,46,1.388888889,2.660497397
+V 20 20,RT,$RT_{ni}$,Variable,Variable,136,4.106280193,9.133646743
+V 20 20,ST,$ST_{ni}$,Variable,Variable,96,2.898550725,6.447280054
+V 20 20,VC,$C_{vk}$,Variable,Variable,62,1.871980676,4.163868368
+V 20 20,VE,$E_{vk}$,Variable,Variable,98,2.958937198,6.581598388
+V 20 20,VT,$T_{vk}$,Variable,Variable,215,6.491545894,14.43922095

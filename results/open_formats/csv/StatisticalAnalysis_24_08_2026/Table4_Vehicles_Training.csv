@@ -1,0 +1,133 @@
+Number of Vehicles ,Column_2,Column_3,Column_4,Column_5,Column_6,Column_7,Column_8,Column_9,Column_10,Column_11,Column_12,Column_13,Column_14,Column_15,Column_16,Column_17,Column_18,Column_19
+,,,,,,,,,,,,,,,,,,
+Training,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+A Shapiro test is performed to check whether the samples follow a normal distribution.,,,,,,,,,,,,,,,,,,
+,Method,Shapiro p-value,,,,,,,,,,,,,,,,
+1,GP,0.630397312633075,,,,,,,,,,,,,,,,
+2,GA  5  Sum,1.82317436358909e-7,,,,,,,,,,,,,,,,
+3,GA  5  Vote,0.000263035048273261,,,,,,,,,,,,,,,,
+4,GA  7  Sum,0.0000208391034092576,,,,,,,,,,,,,,,,
+5,GA  7  Vote,0.00000481923622019778,,,,,,,,,,,,,,,,
+6,MGA  3  Sum ,0.0732954973055371,,,,,,,,,,,,,,,,
+7,MGA  3  Vote,0.157431513596342,,,,,,,,,,,,,,,,
+8,MGA  5  Sum ,0.00103941877513114,,,,,,,,,,,,,,,,
+9,MGA  5  Vote ,0.00755386957166767,,,,,,,,,,,,,,,,
+10,MGA  7  Sum,0.0716856994868874,,,,,,,,,,,,,,,,
+11,MGA  7  Vote ,0.0549232361620433,,,,,,,,,,,,,,,,
+12,SEC  5  Sum,2.39312705763189e-9,,,,,,,,,,,,,,,,
+13,SEC  5  Vote,0.00157497457088589,,,,,,,,,,,,,,,,
+14,SEC  7  Sum,0.0145280504251432,,,,,,,,,,,,,,,,
+15,SEC  7  Vote,0.0848210566962989,,,,,,,,,,,,,,,,
+"The Shapiro–Wilk test was applied to each method. Samples with constant values were excluded, as the test is not defined for distributions with zero variance.",,,,,,,,,,,,,,,,,,
+"Shapiro–Wilk tests revealed that several methods significantly deviated from normality (p ≤ 0.05), indicating that the normality assumption was not met for all samples.",,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+Homogeneity_of_Variance among the groups.,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+Method,Statistic,Df,p.value,,,,,,,,,,,,,,,
+Levene,41.95144689743046,18,6.464230545547953e-91,,,,,,,,,,,,,,,
+Fligner-Killeen,318.956859442973,18,5.993698580509598e-57,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+The homoscedasticity assumption was strongly rejected,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+"Due to violations of normality and homoscedasticity, a Kruskal–Wallis test was applied to independent samples.",,,,,,,,,,,,,,,,,,
+ Kruskal-Wallis test,,,χ²,df,p-value,ε²,,,,,,,,,,,,
+,,,520.4485441041161,18,5.20958635973386e-99,0.9118848350346934,,"The magnitude of ε² was interpreted according to commonly used thresholds: 0.01 (small effect), 0.08 (medium effect), and 0.26 (large effect).",,,,,,,,,,
+The Kruskal–Wallis test revealed statistically significant differences among the groups.,,,,,,,,,,,,,,,,,,
+"The effect size (ε²) was very large, indicating that the observed differences among groups are substantial and practically meaningful.",,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+Kruskal post-hoc,,,,,,,,,,,,,,,,,,
+ Post-hoc pairwise comparisons were performed using Dunn's test with a Bonferroni correction to identify which specific groups showed differences.,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,GP,GA  3  Sum,GA  3  Vote,GA  5  Sum,GA  5  Vote,GA  7  Sum,GA  7  Vote,MGA  3  Sum ,MGA  3  Vote,MGA  5  Sum ,MGA  5  Vote ,MGA  7  Sum,MGA  7  Vote ,SEC  3  Sum,SEC  3  Vote,SEC  5  Sum,SEC  5  Vote,SEC  7  Sum
+GA  3  Sum,0.0008928542377862892,,,,,,,,,,,,,,,,,
+GA  3  Vote,1,1,,,,,,,,,,,,,,,,
+GA  5  Sum,1.237469006414765e-10,1,0.00005019008258074851,,,,,,,,,,,,,,,
+GA  5  Vote,3.185580403906811e-11,0.8668635554019442,0.00001864713025267314,1,,,,,,,,,,,,,,
+GA  7  Sum,1.1427649378589402e-11,0.5643940767657353,0.000008777673542841729,1,1,,,,,,,,,,,,,
+GA  7  Vote,4.703411853915975e-27,4.110256666714727e-9,6.875492983637696e-18,0.008393858555510458,0.018118045530156383,0.031359398211516426,,,,,,,,,,,,
+MGA  3  Sum ,4.117313326291987e-21,0.000011464805056999487,4.4983896160915605e-13,0.9303481430356021,1,1,1,,,,,,,,,,,
+MGA  3  Vote,6.987657945983255e-16,0.006459909001205957,5.777664104127619e-9,1,1,1,1,1,,,,,,,,,,
+MGA  5  Sum ,3.4795329626220645e-23,7.767669051211155e-7,9.72882474612839e-15,0.20160136434985496,0.3778193676762713,0.5892941999279713,1,1,1,,,,,,,,,
+MGA  5  Vote ,1.0251226492546982e-26,6.56700240287813e-9,1.3027598283480458e-17,0.011255125426473393,0.0240030307357004,0.041177783456467804,1,1,1,1,,,,,,,,
+MGA  7  Sum,4.2726289562812075e-20,0.00004145534969955642,2.8994906757596577e-12,1,1,1,1,1,1,1,1,,,,,,,
+MGA  7  Vote ,6.581724311855322e-30,7.368303644355832e-11,3.036820932191685e-20,0.0006365945360924118,0.001517750211043225,0.0028269567374530975,1,1,0.3042379209058877,1,1,1,,,,,,
+SEC  3  Sum,0.0008928542377862892,1,1,1,0.8668635554019442,0.5643940767657353,4.110256666714727e-9,0.000011464805056999487,0.006459909001205957,7.767669051211155e-7,6.56700240287813e-9,0.00004145534969955642,7.368303644355832e-11,,,,,
+SEC  3  Vote,1,1,1,0.00005019008258074851,0.00001864713025267314,0.000008777673542841729,6.875492983637696e-18,4.4983896160915605e-13,5.777664104127619e-9,9.72882474612839e-15,1.3027598283480458e-17,2.8994906757596577e-12,3.036820932191685e-20,1,,,,
+SEC  5  Sum,0.00024751080264737423,1,0.955506199163118,1,1,1,2.3850953442444654e-8,0.00004792836630616661,0.01954842445992574,0.000003655892249554227,3.743640043972995e-8,0.0001632238266763041,4.947399886057588e-10,1,0.955506199163118,,,
+SEC  5  Vote,0.5043329591874794,1,1,0.00452578098694982,0.0019805262952784786,0.0010525547302309014,2.4527183844643957e-14,4.989255079707943e-10,0.0000020083717575502792,1.647246771876695e-11,4.3631867670626784e-14,2.595632875608682e-9,1.8189280907932965e-16,1,1,1,,
+SEC  7  Sum,0.6097756485598232,1,1,0.0034850628558479742,0.0015094226679808513,0.00079606335150277,1.496404559560461e-14,3.277926602718684e-10,0.000001420105438894838,1.0536068129023564e-11,2.6726544619087585e-14,1.7286342590016077e-9,1.0738533631305823e-16,1,1,1,1,
+SEC  7  Vote,1,0.24672082080315427,1,0.0000010997163138753035,3.620667478385862e-7,1.5583879717840097e-7,1.008724170690945e-20,1.5551915187464494e-15,4.6845950112454306e-11,2.465742727457988e-17,2.00184877569459e-20,1.1731944414403853e-14,3.046934795821488e-23,0.24672082080315427,1,0.09635302082560214,1,1
+,,,,,,,,,,,,,,,,,,
+Cliff's Delta: Pairwise effect sizes quantifying the magnitude of significant differences.,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,GP,GA  3  Sum,GA  3  Vote,GA  5  Sum,GA  5  Vote,GA  7  Sum,GA  7  Vote,MGA  3  Sum ,MGA  3  Vote,MGA  5  Sum ,MGA  5  Vote ,MGA  7  Sum,MGA  7  Vote ,SEC  3  Sum,SEC  3  Vote,SEC  5  Sum,SEC  5  Vote,SEC  7  Sum
+GA  3  Sum,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+GA  3  Vote,0.967,-1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+GA  5  Sum,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+GA  5  Vote,1,0.967,1,-0.021,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+GA  7  Sum,1,1,1,0.26,0.089,0,0,0,0,0,0,0,0,0,0,0,0,0
+GA  7  Vote,1,1,1,1,0.984,1,0,0,0,0,0,0,0,0,0,0,0,0
+MGA  3  Sum ,1,1,1,0.884,0.748,0.849,-0.5,0,0,0,0,0,0,0,0,0,0,0
+MGA  3  Vote,1,1,1,0.534,0.403,0.402,-0.762,-0.426,0,0,0,0,0,0,0,0,0,0
+MGA  5  Sum ,1,1,1,0.986,0.874,0.984,-0.411,0.17,0.576,0,0,0,0,0,0,0,0,0
+MGA  5  Vote ,1,1,1,1,0.938,1,0,0.432,0.72,0.313,0,0,0,0,0,0,0,0
+MGA  7  Sum,1,1,1,0.812,0.687,0.758,-0.579,-0.07,0.348,-0.228,-0.481,0,0,0,0,0,0,0
+MGA  7  Vote ,1,1,1,1,0.977,1,0.42,0.656,0.838,0.574,0.262,0.686,0,0,0,0,0,0
+SEC  3  Sum,1,0,1,-1,-0.967,-1,-1,-1,-1,-1,-1,-1,-1,0,0,0,0,0
+SEC  3  Vote,0.967,-1,0,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,0,0,0,0
+SEC  5  Sum,1,0.167,1,-0.962,-0.877,-0.991,-1,-1,-0.988,-1,-1,-1,-1,0.167,1,0,0,0
+SEC  5  Vote,0.977,-0.6,0.3,-0.943,-0.899,-0.987,-1,-1,-0.986,-1,-1,-1,-1,-0.6,0.3,-0.637,0,0
+SEC  7  Sum,0.976,-0.633,0.267,-0.948,-0.937,-0.949,-1,-0.991,-0.969,-0.999,-1,-0.986,-1,-0.633,0.267,-0.68,-0.011,0
+SEC  7  Vote,0.949,-0.9,-0.533,-0.981,-0.971,-0.996,-1,-1,-0.996,-1,-1,-1,-1,-0.9,-0.533,-0.908,-0.604,-0.602
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+"This measure quantifies the magnitude of the differences between pairs of groups, independently of statistical significance. Effect sizes were interpreted according to the categories presented in",,,,,,,,,,,,,,,,,,
+Effect Size Magnitude,Negligible,Small,Medium,Large,,,,,,,,,,,,,,
+Absolute Cliff's Delta (|δ|),< 0.147,0.147-0.330,0.330-0.474,≥ 0.474,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+Cliff's Delta Magnitude,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,GP,GA  3  Sum,GA  3  Vote,GA  5  Sum,GA  5  Vote,GA  7  Sum,GA  7  Vote,MGA  3  Sum ,MGA  3  Vote,MGA  5  Sum ,MGA  5  Vote ,MGA  7  Sum,MGA  7  Vote ,SEC  3  Sum,SEC  3  Vote,SEC  5  Sum,SEC  5  Vote,SEC  7  Sum
+GA  3  Sum,large,84,84,84,84,84,84,84,84,84,84,84,84,84,84,84,84,84
+GA  3  Vote,large,large,84,84,84,84,84,84,84,84,84,84,84,84,84,84,84,84
+GA  5  Sum,large,large,large,84,84,84,84,84,84,84,84,84,84,84,84,84,84,84
+GA  5  Vote,large,large,large,negligible,84,84,84,84,84,84,84,84,84,84,84,84,84,84
+GA  7  Sum,large,large,large,small,negligible,84,84,84,84,84,84,84,84,84,84,84,84,84
+GA  7  Vote,large,large,large,large,large,large,84,84,84,84,84,84,84,84,84,84,84,84
+MGA  3  Sum ,large,large,large,large,large,large,large,84,84,84,84,84,84,84,84,84,84,84
+MGA  3  Vote,large,large,large,large,medium,medium,large,medium,84,84,84,84,84,84,84,84,84,84
+MGA  5  Sum ,large,large,large,large,large,large,medium,small,large,84,84,84,84,84,84,84,84,84
+MGA  5  Vote ,large,large,large,large,large,large,negligible,medium,large,small,84,84,84,84,84,84,84,84
+MGA  7  Sum,large,large,large,large,large,large,large,negligible,medium,small,large,84,84,84,84,84,84,84
+MGA  7  Vote ,large,large,large,large,large,large,medium,large,large,large,small,large,84,84,84,84,84,84
+SEC  3  Sum,large,negligible,large,large,large,large,large,large,large,large,large,large,large,84,84,84,84,84
+SEC  3  Vote,large,large,negligible,large,large,large,large,large,large,large,large,large,large,large,84,84,84,84
+SEC  5  Sum,large,small,large,large,large,large,large,large,large,large,large,large,large,small,large,84,84,84
+SEC  5  Vote,large,large,small,large,large,large,large,large,large,large,large,large,large,large,small,large,84,84
+SEC  7  Sum,large,large,small,large,large,large,large,large,large,large,large,large,large,large,small,large,negligible,84
+SEC  7  Vote,large,large,large,large,large,large,large,large,large,large,large,large,large,large,large,large,large,large
+,,,,,,,,,,,,,,,,,,
+Confidence Intervals for the median ,,,,,,,,,,,,,,,,,,
+Confidence intervals for the median were computed to provide an estimate of the uncertainty associated with the central tendency of each group.,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+Method,Median,CI95_Lower,CI95_Upper,,,,,,,,,,,,,,,
+GP,446,436,452.5,,,,,,,,,,,,,,,
+GA  3  Sum,395,395,395,,,,,,,,,,,,,,,
+GA  3  Vote,397,397,397,,,,,,,,,,,,,,,
+GA  5  Sum,393,391,393,,,,,,,,,,,,,,,
+GA  5  Vote,391.5,391,394,,,,,,,,,,,,,,,
+GA  7  Sum,392,391,392,,,,,,,,,,,,,,,
+GA  7  Vote,388,388,388,,,,,,,,,,,,,,,
+MGA  3  Sum ,390,389,390,,,,,,,,,,,,,,,
+MGA  3  Vote,391,390,391,,,,,,,,,,,,,,,
+MGA  5  Sum ,389,388.5,390,,,,,,,,,,,,,,,
+MGA  5  Vote ,388,387.5,389,,,,,,,,,,,,,,,
+MGA  7  Sum,389.5,389,390.5,,,,,,,,,,,,,,,
+MGA  7  Vote ,387,387,388,,,,,,,,,,,,,,,
+SEC  3  Sum,395,395,395,,,,,,,,,,,,,,,
+SEC  3  Vote,397,397,397,,,,,,,,,,,,,,,
+SEC  5  Sum,395,395,395,,,,,,,,,,,,,,,
+SEC  5  Vote,397,396,397,,,,,,,,,,,,,,,
+SEC  7  Sum,396.5,396,397,,,,,,,,,,,,,,,
+SEC  7  Vote,399,397,399.5,,,,,,,,,,,,,,,
