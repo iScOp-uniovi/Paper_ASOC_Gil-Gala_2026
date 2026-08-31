@@ -19,6 +19,7 @@ This repository contains supplementary material for the paper:
 
 - `data/` → Benchmark instances, datasets and configuration files used in the experiments.
 - `results/` → Experimental results, performance metrics and analysis outputs.
+- `code/` → Source code associated with the experiments reported in the paper. The code release is coming soon; see `code/README.md` for availability and contact information.
 - `README.md` → Repository documentation and usage information.
 
 ---
